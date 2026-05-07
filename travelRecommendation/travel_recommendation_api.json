@@ -1,0 +1,86 @@
+{
+    "paises": [
+      {
+        "id": 1,
+        "nombre": "Australia",
+        "ciudades": [
+          {
+            "nombre": "Sídney, Australia",
+            "imageUrl": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=1200&auto=format&fit=crop",
+            "descripcion": "Una ciudad vibrante conocida por sus lugares emblemáticos como la Ópera de Sídney y el Puente del Puerto de Sídney."
+          },
+          {
+            "nombre": "Melbourne, Australia",
+            "imageUrl": "https://images.unsplash.com/photo-1514395462725-fb4566210144?q=80&w=1200&auto=format&fit=crop",
+            "descripcion": "Un centro cultural famoso por su arte, su gastronomía y sus diversos barrios."
+          }
+        ]
+      },
+  
+      {
+        "id": 2,
+        "nombre": "Japón",
+        "ciudades": [
+          {
+            "nombre": "Tokio, Japón",
+            "imageUrl": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop",
+            "descripcion": "Una metrópolis bulliciosa que combina tradición y modernidad, famosa por sus cerezos en flor y su rica cultura."
+          },
+          {
+            "nombre": "Kioto, Japón",
+            "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop",
+            "descripcion": "Conocida por sus templos históricos, jardines y casas de té tradicionales."
+          }
+        ]
+      },
+  
+      {
+        "id": 3,
+        "nombre": "Brasil",
+        "ciudades": [
+          {
+            "nombre": "Río de Janeiro, Brasil",
+            "imageUrl": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1200&auto=format&fit=crop",
+            "descripcion": "Una ciudad animada conocida por sus impresionantes playas, sus vibrantes celebraciones de carnaval y sus lugares emblemáticos."
+          },
+          {
+            "nombre": "São Paulo, Brasil",
+            "imageUrl": "https://images.unsplash.com/photo-1543059080-f9b1272213d5?q=80&w=1200&auto=format&fit=crop",
+            "descripcion": "El centro financiero con una cultura diversa, arte y una vibrante vida nocturna."
+          }
+        ]
+      }
+    ],
+  
+    "templos": [
+      {
+        "id": 1,
+        "nombre": "Angkor Wat, Camboya",
+        "imageUrl": "https://images.unsplash.com/photo-1558981403-c5f9891c1fda?q=80&w=1200&auto=format&fit=crop",
+        "descripcion": "Patrimonio de la Humanidad de la UNESCO y el monumento religioso más grande del mundo."
+      },
+  
+      {
+        "id": 2,
+        "nombre": "Taj Mahal, India",
+        "imageUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=1200&auto=format&fit=crop",
+        "descripcion": "Un símbolo icónico del amor y una obra maestra de la arquitectura mogol."
+      }
+    ],
+  
+    "playas": [
+      {
+        "id": 1,
+        "nombre": "Bora Bora, Polinesia Francesa",
+        "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+        "descripcion": "Una isla conocida por sus impresionantes aguas turquesas y sus lujosos bungalows sobre el agua."
+      },
+  
+      {
+        "id": 2,
+        "nombre": "Playa Copacabana, Brasil",
+        "imageUrl": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop",
+        "descripcion": "Una famosa playa en Río de Janeiro, Brasil, con un ambiente vibrante y vistas panorámicas."
+      }
+    ]
+  }

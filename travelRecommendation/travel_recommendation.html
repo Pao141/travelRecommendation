@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blue Horizon Travel</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    overflow-x:hidden;
+}
+
+/* BACKGROUND */
+
+.main-container{
+
+    width:100%;
+    min-height:100vh;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1494526585095-c41746248156");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+
+    width:100%;
+
+    background:#082c36;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 50px;
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.logo h1{
+
+    font-size:40px;
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+}
+
+nav ul li button{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+}
+
+nav ul li button:hover{
+
+    color:#2bbbad;
+}
+
+/* SEARCH */
+
+.search-box{
+
+    background:white;
+
+    border-radius:40px;
+
+    padding:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.search-box input{
+
+    border:none;
+
+    outline:none;
+
+    padding:10px;
+
+    width:250px;
+}
+
+.search-box button{
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    background:#2bbbad;
+
+    color:white;
+}
+
+/* SOCIAL */
+
+.social-icons{
+
+    position:absolute;
+
+    left:40px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+}
+
+.social-icons i{
+
+    font-size:30px;
+}
+
+/* HOME */
+
+#home-content{
+
+    padding:120px 100px;
+
+    max-width:700px;
+}
+
+#home-content h2{
+
+    font-size:80px;
+
+    margin-bottom:30px;
+}
+
+#home-content p{
+
+    font-size:24px;
+
+    line-height:1.5;
+
+    margin-bottom:30px;
+}
+
+#home-content button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    background:#2bbbad;
+
+    color:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+/* ABOUT */
+
+#about-content{
+
+    display:none;
+
+    min-height:100vh;
+
+    padding:80px;
+
+    flex-direction:column;
+
+    justify-content:center;
+}
+
+#about-content h2{
+
+    font-size:80px;
+
+    margin-bottom:40px;
+}
+
+.about-box{
+
+    background:rgba(255,255,255,0.15);
+
+    padding:35px;
+
+    border-radius:15px;
+
+    margin-bottom:60px;
+
+    font-size:22px;
+
+    line-height:1.8;
+}
+
+.team-section{
+
+    display:flex;
+
+    gap:50px;
+
+    flex-wrap:wrap;
+}
+
+.team-title{
+
+    font-size:60px;
+
+    min-width:250px;
+}
+
+.team-cards{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.team-card{
+
+    width:240px;
+
+    background:rgba(255,255,255,0.15);
+
+    border-radius:15px;
+
+    padding:30px;
+
+    text-align:center;
+}
+
+.team-card i{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+}
+
+.team-card h3{
+
+    margin-bottom:10px;
+}
+
+.team-card p{
+
+    margin-bottom:15px;
+}
+
+.team-card button{
+
+    border:none;
+
+    background:#2b6cb0;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:20px;
+}
+
+/* CONTACT */
+
+#contact-content{
+
+    display:none;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:100px;
+
+    gap:50px;
+}
+
+.contact-left h2{
+
+    font-size:80px;
+
+    margin-bottom:20px;
+}
+
+.contact-form{
+
+    width:450px;
+
+    background:rgba(255,255,255,0.15);
+
+    padding:40px;
+
+    border-radius:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    border-radius:10px;
+}
+
+.contact-form button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    background:#2bbbad;
+
+    color:white;
+
+    border-radius:10px;
+}
+
+/* RESULTS */
+
+#results{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+    padding:50px;
+}
+
+.card{
+
+    background:white;
+
+    color:black;
+
+    border-radius:15px;
+
+    overflow:hidden;
+}
+
+.card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+}
+
+.card h3{
+
+    padding:20px;
+}
+
+.card p{
+
+    padding:0 20px 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="main-container">
+
+<nav>
+
+    <div class="logo">
+
+        <h1>Blue Horizon Travel</h1>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <button onclick="showHome()">
+                Home
+            </button>
+        </li>
+
+        <li>
+            <button onclick="showAbout()">
+                About Us
+            </button>
+        </li>
+
+        <li>
+            <button onclick="showContact()">
+                Contact Us
+            </button>
+        </li>
+
+    </ul>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Enter a destination">
+
+        <button onclick="search()">
+            Search
+        </button>
+
+        <button onclick="resetSearch()">
+            Clear
+        </button>
+
+    </div>
+
+</nav>
+
+<div class="social-icons">
+
+<i class="fab fa-twitter"></i>
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+
+</div>
+
+<section id="home-content">
+
+<h2>EXPLORE DREAM DESTINATION</h2>
+
+<p>
+Discover amazing places around the world.
+</p>
+
+<button>Book Now</button>
+
+</section>
+
+<section id="about-content">
+
+<h2>ABOUT US</h2>
+
+<div class="about-box">
+
+<p>
+
+Welcome to Our Company!
+
+We are passionate about helping users
+discover beautiful travel destinations.
+
+</p>
+
+</div>
+
+<div class="team-section">
+
+<div class="team-title">
+
+Our Team
+
+</div>
+
+<div class="team-cards">
+
+<div class="team-card">
+
+<i class="fa-solid fa-user"></i>
+
+<h3>Martin López</h3>
+
+<p>CEO</p>
+
+<button>CEO</button>
+
+</div>
+
+<div class="team-card">
+
+<i class="fa-solid fa-user"></i>
+
+<h3>Paola Velez</h3>
+
+<p>Team Lead</p>
+
+<button>Lead</button>
+
+</div>
+
+<div class="team-card">
+
+<i class="fa-solid fa-user"></i>
+
+<h3>Ricardo Perez</h3>
+
+<p>Delivery Head</p>
+
+<button>Head</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact-content">
+
+<div class="contact-left">
+
+<h2>CONTACT US</h2>
+
+<p>Get in touch</p>
+
+</div>
+
+<div class="contact-form">
+
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button>Submit</button>
+
+</div>
+
+</section>
+
+<section id="results"></section>
+
+</div>
+
+<script src="travel_recommendation.js"></script>
+
+</body>
+</html>
