@@ -1,0 +1,24 @@
+# ✈️ Travel Recommendation
+
+Aplicación web de recomendaciones de destinos turísticos desarrollada como proyecto práctico de desarrollo web.
+
+## 📋 Descripción
+
+El proyecto permite explorar recomendaciones de destinos de viaje y presentar información de diferentes opciones turísticas mediante una interfaz web interactiva.
+
+## 🛠️ Tecnologías
+
+* HTML5
+* JavaScript
+* JSON
+* CSS
+
+## 📂 Estructura
+
+* `index.html` — estructura principal de la aplicación.
+* `travel_recommendation.js` — lógica y funcionalidades de la aplicación.
+* `travel_recommendation_api.json` — datos utilizados para las recomendaciones.
+
+## 🎯 Objetivo
+
+Practicar el desarrollo de aplicaciones web utilizando JavaScript, manipulación de datos y una estructura sencilla de frontend.
